@@ -1,5 +1,7 @@
 # Marlin firmware for Ender 3 v2 with some modifications
 
+## Marlin github
+https://github.com/MarlinFirmware/Marlin
 
 ## License
 
