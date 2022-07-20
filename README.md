@@ -1,5 +1,17 @@
 # Marlin firmware for Ender 3 v2 with some modifications
 
+This is Marlin firmware customized for my Creality Ender 3 v2 with bltouch and microswiss direct extruder
+
+## Changes from example Ender 3 v2 firmware
+
+Following changes have been made to make this suitable for my machine:
+- Bed size changed to 225,210,210 (X,Y,Z)
+- XY min positions changed to -8,-14 (X,Y)
+- Enabled Bltouch abl-probe
+- Probing with 2 probes 70*60 movement 10*60 fast pass and slow pass is half the fast pass
+- Nozzle to probe offsets: -45,-6,-3.8 (X,Y,Z)
+- Some other misc settings
+
 ## Marlin github
 https://github.com/MarlinFirmware/Marlin
 
