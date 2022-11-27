@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Nov 27 10:49:36 2022
+# Make data base, printed on Sun Nov 27 12:53:03 2022
 
 # Variables
 
@@ -93,13 +93,13 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 4098
+VSCODE_PID = 4034
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/karel-ubuntu:@/tmp/.ICE-unix/2521,unix/karel-ubuntu:/tmp/.ICE-unix/2521
+SESSION_MANAGER = local/karel-ubuntu:@/tmp/.ICE-unix/2536,unix/karel-ubuntu:/tmp/.ICE-unix/2536
 # automatic
 *F = $(notdir $*)
 # environment
@@ -118,8 +118,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
-# environment
-PLATFORMIO_CALLER = vscode
 # environment
 XMODIFIERS = @im=ibus
 # environment
@@ -141,7 +139,7 @@ LC_MONETARY = en_GB.UTF-8
 # environment
 LC_TIME = en_GB.UTF-8
 # environment
-INVOCATION_ID = 54c8f449d3c64749b02bbd484b562dc1
+INVOCATION_ID = d2671fc3bef14e23b0a84aefdbd581c5
 # environment
 USERNAME = karel
 # environment
@@ -150,8 +148,6 @@ LC_TELEPHONE = en_GB.UTF-8
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
-# environment
-NO_PROXY = 127.0.0.1
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
@@ -168,12 +164,10 @@ GNUMAKEFLAGS :=
 LOGNAME = karel
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
-# environment
-PLATFORMIO_PATH = /home/karel/.platformio/python3/bin:/home/karel/.local/bin:/home/karel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/karel/.pub-cache/bin
 # makefile
 .DEFAULT_GOAL := help
 # environment
-SYSTEMD_EXEC_PID = 2545
+SYSTEMD_EXEC_PID = 2608
 # environment
 DISPLAY = :1
 # environment
@@ -185,11 +179,11 @@ DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2046
+MANAGERPID = 2050
 # environment
 LC_MEASUREMENT = en_GB.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4098
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4034
 # environment
 _ = /usr/share/code/code
 # environment
@@ -199,13 +193,11 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:42776
+JOURNAL_STREAM = 8:41674
 # environment
 XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-PLATFORMIO_IDE = 2.5.5
 # environment
 HOME = /home/karel
 # environment
@@ -231,7 +223,7 @@ GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = en_GB.UTF-8
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=5/139=4%
+# Load=105/1024=10%, Rehash=0, Collisions=4/135=3%
 
 # Pattern-specific Variable Values
 
@@ -273,6 +265,7 @@ tests-single-local:
 	@if ! test -n "$(TEST_TARGET)" ; then echo "***ERROR*** Set TEST_TARGET=<your-module> or use make tests-all-local" ; return 1; fi
 	export PATH=./buildroot/bin/:./buildroot/tests/:${PATH} \
 	  && export VERBOSE_PLATFORMIO=$(VERBOSE_PLATFORMIO) \
+ 
 	  && run_tests . $(TEST_TARGET) "$(ONLY_TEST)"
 
 tests-single-local-docker:
@@ -286,7 +279,6 @@ tests-single-local-docker:
 
 setup-local-docker:
 #  Phony target (prerequisite of .PHONY).
- 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -370,6 +362,6 @@ tests-single-ci:
 # strcache performance: lookups = 64 / hit rate = 48%
 # hash-table stats:
 # Load=33/8192=0%, Rehash=0, Collisions=0/64=0%
-# Finished Make data base on Sun Nov 27 10:49:36 2022
+# Finished Make data base on Sun Nov 27 12:53:03 2022
 
  
